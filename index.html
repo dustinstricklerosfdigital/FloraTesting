@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <title>https://forestlawn.com/</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      line-height: 1.6;
-      padding: 0 20px;
-      background-color: #A2B793;
-    }
-
-    h1 {
-      color: #032D60;
-    }
-  </style>
-</head>
-<body>
-  <h1>https://forestlawn.com/</h1>
-<h2>Test Site</h2>
-
-
-
   <!-- === SALESFORCE EMBEDDED SERVICE SNIPPET === -->
-
   <script type="text/javascript">
     window.addEventListener("onEmbeddedMessagingReady", () => {
       console.log("Received the onEmbeddedMessagingReady event…");
-
       embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
         InitialURL: window.location.href
       });
@@ -39,23 +10,18 @@
     function initEmbeddedMessaging() {
       try {
         embeddedservice_bootstrap.settings.language = "en_US";
-
         embeddedservice_bootstrap.init(
-          "00D52000000JQwN',
-				'FC',
-				'https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330',
-				{
-					scrt2URL: 'https://forestlawnmortuary--training2.sandbox.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'>
+          '00D52000000JQwN',
+          'FC',
+          'https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330',
+          {
+            scrt2URL: 'https://forestlawnmortuary--training2.sandbox.my.salesforce-scrt.com'
+          }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    }
   </script>
-
+  <script type="text/javascript" src="https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
   <!-- === END SNIPPET === -->
-</body>
-</html>
