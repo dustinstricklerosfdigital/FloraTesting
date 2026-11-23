@@ -24,11 +24,9 @@
   <p>SPANISH Testing</p>
 
   <!-- === SALESFORCE EMBEDDED SERVICE SNIPPET === -->
-
   <script type="text/javascript">
     window.addEventListener("onEmbeddedMessagingReady", () => {
       console.log("Received the onEmbeddedMessagingReady event…");
-
       embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
         InitialURL: window.location.href
       });
@@ -37,26 +35,20 @@
     function initEmbeddedMessaging() {
       try {
         embeddedservice_bootstrap.settings.language = "en_US";
-
         embeddedservice_bootstrap.init(
-          "00Dhu00000066fR",
-          "Flora_Channel_for_FL_Website_Chat",
-          "https://forestlawnmortuary--dustin.sandbox.my.site.com/ESWFloraChannelforFLW_CHANGE_THIS_1787828990460",
+          '00D52000000JQwN',
+          'FC',
+          'https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330',
           {
-            scrt2URL: "https://forestlawnmortuary--dusti_CHANGE_THIS_n.sandbox.my.salesforce-scrt.com"
+            scrt2URL: 'https://forestlawnmortuary--training2.sandbox.my.salesforce-scrt.com'
           }
         );
       } catch (err) {
-        console.error("Error loading Embedded Messaging: ", err);
+        console.error('Error loading Embedded Messaging: ', err);
       }
     }
   </script>
-  <script
-    type="text/javascript"
-    src="https://forestlawnmortuary--dustin.sandbox.my.site.com/ESWFloraChannelforFLW1787_CHANGE_THIS_828990460/assets/js/bootstrap.min.js"
-    onload="initEmbeddedMessaging()">
-  </script>
-
+  <script type="text/javascript" src="https://forestlawnmortuary--training2.sandbox.my.site.com/ESWFC1794841756330/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()"></script>
   <!-- === END SNIPPET === -->
 </body>
 </html>
